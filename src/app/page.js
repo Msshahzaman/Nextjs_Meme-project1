@@ -9,7 +9,7 @@ const response = await res.json()
             
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h2 className="home">Home</h2>
+      <h2 className="home">Meme Generator</h2>
 
 
 
@@ -21,10 +21,14 @@ const response = await res.json()
   
   
   <div className="memeBox" key={index}>
-    <h2>{item.id}</h2>
-    <h2>{item.name}</h2>
+    <h2 className="memeName" >{item.name}</h2>
+    <br />
     <img src={item.url}   alt="" />
-  <Link href={`detailmeme?url=${item.url}`}>Select meme</Link> 
+    <br />
+    <div >
+  <Link href={`detailmeme?url=${item.url}`} className="Select-meme-Btn">SELECT MEME</Link> </div>
+  <br />
+  <br />
   </div>
   )
 })}

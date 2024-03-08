@@ -1,4 +1,29 @@
 .home{
-    font-size: 20px;
+    font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.memeBox{
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+
+}
+
+.render-meme{
+    height: 50%;
+    width: 50%;
+}
+.memeName{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(8, 162, 8);
+}
+.Select-meme-Btn{
+    background-color: rgb(137, 147, 147);
+    color: black;
+    position: relative;
+    left: 40%;
+    border-radius: 10px;
 }
